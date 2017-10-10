@@ -48,5 +48,21 @@ public class PrimitiveArrays {
         for (String primitive_type : primitive_types) {
             System.out.println(primitive_type);
         }
+        
+        // Arrays can store other arrays as well.
+        // These are called multidimensional array
+        
+        // 2D array
+        int[][] screen = new int[3][5];
+        screen[0][4] = 7;
+        screen[2][0] = 8;
+        screen[2][2] = -1;
+        
+        for (int width=0; width < screen.length; width++) {
+            for (int height=0; height < screen[width].length; height++) {
+                System.out.print("[" + screen[width][height] + "] ");
+            }
+            System.out.println();
+        }
     }
 }
