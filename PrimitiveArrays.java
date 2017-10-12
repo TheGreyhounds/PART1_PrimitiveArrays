@@ -64,5 +64,20 @@ public class PrimitiveArrays {
             }
             System.out.println();
         }
+        
+        // You also can directly initialize a multidimensional array
+        double identity_matrix[][] = {
+            {0, 0, 0, 1},
+            {0, 0, 1, 0},
+            {0, 1, 0, 0},
+            {1, 0, 0, 0}
+        };
+        
+        for (double[] row : identity_matrix) {
+            for (double cell : row) {
+                System.out.print("[" + cell + "] ");
+            }
+            System.out.println();
+        }
     }
 }
